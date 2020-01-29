@@ -1,3 +1,29 @@
+// colors
+$white: #fff;
+$black: #000;
+$color_fb: #3b5998;
+$color_wapp: #00e576;
+$color_ytb: #ff0000;
+
+// font-family
+$opensans: 'Open Sans', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+// font size
+$font-n: 1rem;
+$font-s: $font-n * .9;
+$font-xs: $font-n * .8;
+$font-m: $font-n * 1.2;
+$font-l: $font-n * 1.5;
+$font-xl: $font-n * 2;
+$font-xxl: $font-n * 2.5;
+
+//z-index
+$z-normal: 1;
+$z-pseudo: 10;
+$z-overpseudo:50;
+$z-fixed:100;
+$z-overlay:1000;
+
 *,
 *::before,
 *:after {

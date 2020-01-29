@@ -1,8 +1,11 @@
 extends ../config/template
 append config
-  -pageTitle = 'Home'
+  -pageTitle = 'Inicio'
   -pageDescription = 'Pagina inicial de EDboilerplate'
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  include ../includes/main-menu
+  include ../includes/home/header
+  include ../includes/home/banner
+  main 
+    include ../includes/section_top

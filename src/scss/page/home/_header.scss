@@ -1,0 +1,95 @@
+.header-container{
+  margin-top: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: $z-fixed;
+  padding: 0 1rem;
+}
+.brand-container{
+  display: flex;
+  align-items: center;
+  a{
+    text-decoration: none;
+  }
+}
+.brand-name{
+  font-size: $font-s;
+  color: $white;
+}
+.main-menu{
+  display: none;
+  ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    
+    display: block;
+    list-style: none;
+  }
+ 
+  &__link{
+    display: block;
+    padding: .5rem ;
+    color: $white;
+  }
+  @media (min-width:992px) {
+    display: block;
+    ul{
+      display: flex;
+    }
+  }
+}
+.bootstrap-container{
+  position: relative;
+}
+.nav-container{
+  position: absolute;
+  top: 2.5rem;
+  width: 100%;
+  background-color: $white;
+  text-align: center;
+  a{
+    color: black;
+  }
+  a:hover{
+    background-color: $black;
+    color: $white;
+    text-decoration: none;
+  }
+  @media (min-width:992px) {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    a{
+      color: $white;
+    }
+  }
+}
+.show{
+  display: block;
+}
+
+.toggle-button{
+  @include dflex();
+  cursor: pointer;
+  color: $white;
+  font-size: $font-m;
+  border: 1px solid $white;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+
+  @media (min-width:992px) {
+    display: none;
+  }
+}
+
+.whats-button{
+  @include dflex();
+  padding: .5rem;
+  font-size: $font-m;
+  color: $color-wapp;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $black;
+  }
+}
