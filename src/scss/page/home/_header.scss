@@ -1,9 +1,12 @@
 .header-container{
-  margin-top: 1rem;
+  padding: 1rem .5rem;
   position: fixed;
   width: 100%;
   z-index: $z-fixed;
-  padding: 0 1rem;
+  background-color: rgba($black,.7);
+  @media (min-width:992px) {
+    padding: 0 .5rem;
+  }
 }
 .brand-container{
   display: flex;
@@ -15,6 +18,7 @@
 .brand-name{
   font-size: $font-s;
   color: $white;
+  font-family: $ubuntu;
 }
 .main-menu{
   display: none;
@@ -85,7 +89,7 @@
 .whats-button{
   @include dflex();
   padding: .5rem;
-  font-size: $font-m;
+  font-size: $font-l;
   color: $color-wapp;
   cursor: pointer;
 

@@ -1,0 +1,26 @@
+mixin feature(image,title,color)
+  .col-md-4
+    .feature
+      .feature-img
+        i.fa(class=image style=`color: ${color};`)
+      h3.feature-title= title
+
+mixin newsItem()
+  .col-md-3
+    .new-item
+      .new-item__image-container
+        img.new-item__image(src="https://lamenteesmaravillosa.com/wp-content/uploads/2017/09/amigos-cogidos-de-la-mano.jpg", alt="")
+      .new-item__data
+        h3.new-item__data-title titulo noticia
+        p.new-item__data-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed velit quas, possimus quisquam sequi sit?
+        a.btn.btn-outline-success(href="#") Seguir leyendo
+
+mixin socialItem(url,image,name)
+  .social-item
+    a(href="#").social-link
+      span.social-icon: i.fa(class=image)
+      =name
+
+mixin blockQuote()
+  .container.text-center.d-flex.justify-content-center.py-5.blockquote
+    h2.h1.col-lg-8 "No hay amor más grande que dar la vida por sus amigos"

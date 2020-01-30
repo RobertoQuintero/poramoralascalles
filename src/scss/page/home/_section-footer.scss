@@ -1,0 +1,30 @@
+.section-footer{
+  background-color:$color_bgblack;
+  a{
+    color:$white
+  }
+}
+.social-icon{
+  padding: .5rem;
+  font-size: $font-m;
+}
+
+.footer-nav__link{
+  a{
+    padding: 0.5rem;
+    font-size: $font-m;
+  }
+}
+.footer-nolinks{
+  padding: 1rem 0 0 1rem;
+  p{
+    color: $white;
+    font-size: $font-n;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media  (min-width:768px){
+    padding: 0;
+  }
+}

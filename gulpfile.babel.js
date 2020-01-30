@@ -32,15 +32,15 @@ const postcssPlugins = [
 
 gulp.task('styles-dev', () => {
   gulp.src('./src/scss/styles.scss')
-    .pipe(sourcemaps.init({ loadMaps : true}))
+    // .pipe(sourcemaps.init({ loadMaps : true}))
     .pipe(plumber())
     .pipe(sass({
       importer: tildeImporter,
       outputStyle: 'expanded',
       includePaths: ['./node_modules']
     }))
-    .pipe(postcss(postcssPlugins))
-    .pipe(sourcemaps.write('.'))
+    // .pipe(postcss(postcssPlugins))
+    // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./public/assets/css/'))
     .pipe(server.stream({match: '**/*.css'}))
 })

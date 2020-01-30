@@ -17,7 +17,6 @@
   background-color: rgba($black,.6);
 }
 .banner-container{
-  border: 1px solid blue;
   position: relative;
   z-index: $z-overpseudo;
 }
@@ -33,6 +32,10 @@
   color:$white;
   letter-spacing: 1px;
   font-size: $font-m;
+  i{
+    padding: 0 .5rem;
+  }
+  
 }
 .banner-button:hover{
   background-color: $white;

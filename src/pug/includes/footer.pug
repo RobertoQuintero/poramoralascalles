@@ -1,0 +1,20 @@
+include ./home/mixins_home
+section.section-footer.py-5
+  .container
+    .row
+      .col-6.col-md-4
+        .section-footer__social
+          +socialItem('','fa-facebook',' facebook')
+          +socialItem('','fa-youtube-play','youtube')
+          +socialItem('','fa-instagram','instagram')
+          +socialItem('','fa-whatsapp','whatsapp')
+      .col-6.col-md-4
+        .footer-nav__link: a(href="/") Inicio
+        .footer-nav__link: a(href="/") Misión
+        .footer-nav__link: a(href="/") Escuchanos
+        .footer-nav__link: a(href="/") En el mundo
+      .col-6.col-md-4.footer-nolinks
+        p Por amor a las calles &copy;
+        p Poza Rica
+        p Veracruz, México
+        p poramoralascalles@gmail.com

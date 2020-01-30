@@ -1,0 +1,17 @@
+.section-features{
+
+}
+.feature{
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  &-img{
+    margin-bottom: 1rem;
+    i{
+      font-size: $font-xxl;
+    }
+  }
+  &-title{
+    font-size: $font-m;
+  }
+}

@@ -1,4 +1,5 @@
 extends ../config/template
+include ../includes/home/mixins_home
 append config
   -pageTitle = 'Inicio'
   -pageDescription = 'Pagina inicial de EDboilerplate'
@@ -8,4 +9,9 @@ block main
   include ../includes/home/header
   include ../includes/home/banner
   main 
-    include ../includes/section_top
+    +blockQuote()
+    include ../includes/home/section_top
+    include ../includes/home/section_features
+    include ../includes/home/section_news
+    include ../includes/home/section_comments
+    include ../includes/footer

@@ -1,0 +1,20 @@
+.new-item{
+  padding: 1rem;
+}
+.new-item:hover{
+  box-shadow: 2px 2px 8px #eee;
+}
+.new-item__image{
+  width: 100%;
+}
+.new-item__data{
+  margin-top: 1rem;
+  &-title{
+    font-size: $font-m;
+    margin-bottom: 1rem;
+  }
+  &-text{
+    line-height: 1.4;
+    text-align: justify;
+  }
+}
