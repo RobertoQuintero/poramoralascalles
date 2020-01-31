@@ -12,13 +12,13 @@ fetch(' https://my-json-server.typicode.com/RobertoQuintero/calles/video',{metho
   .catch(err => console.log('Este es el error: '+err))
 
 const getVideos = () =>{
-let videosList = JSON.parse(sessionStorage.getItem('videos'))
-let setVideos = videosList.map(v => `
-<div class="col-lg-6 mb-3">
-<iframe src="https://www.youtube.com/embed/${v.video_url_id} " frameborder="0" class='youtube-iframe'></iframe>
-</div>`)
-let content = setVideos.reduce((a,b)=> a + b,' ')
-return content
+  let videosList = JSON.parse(sessionStorage.getItem('videos'))
+  let setVideos = videosList.map(v => `
+  <div class="col-lg-6 mb-3">
+  <iframe src="https://www.youtube.com/embed/${v.video_url_id} " frameborder="0" class='youtube-iframe'></iframe>
+  </div>`)
+  let content = setVideos.reduce((a,b)=> a + b,' ')
+  return content
 }
 
 const getImages = () => {
@@ -42,15 +42,21 @@ let content = setImages.reduce((a,b)=> a + b,' ')
 return content
 }
 
-console.log(getVideos())
 const youtubeMedia = mql =>{
-mql.matches
-  ? gridVideos.innerHTML= getVideos()
-  : gridVideos.innerHTML= getImages()
+  !sessionStorage.getItem('videos')
+    ? gridVideos.innerHTML= `<h1>Cargando..</h1>`
+    : mql.matches
+      ? gridVideos.innerHTML= getVideos()
+      : gridVideos.innerHTML= getImages()
 }
 
 youtubeMedia(mql)
 mql.addListener(youtubeMedia)
 
+addEventListener('DOMContentLoaded',()=>{
+  setTimeout(() => {
+    youtubeMedia(mql)
+  }, 4000);
+})
 
 }
