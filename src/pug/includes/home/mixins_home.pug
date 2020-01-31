@@ -17,10 +17,10 @@ mixin newsItem()
 
 mixin socialItem(url,image,name)
   .social-item
-    a(href="#").social-link
+    a(href=url target='_blank').social-link
       span.social-icon: i.fa(class=image)
       =name
 
-mixin blockQuote()
+mixin blockQuote(quote)
   .container.text-center.d-flex.justify-content-center.py-5.blockquote
-    h2.h1.col-lg-8 "No hay amor más grande que dar la vida por sus amigos"
+    h2.h3.col-lg-8= quote

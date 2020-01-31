@@ -3,8 +3,11 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: {
-    color: orange;
+  background :{
+    position: center;
+    size:cover;
+    repeat: no-repeat;
+    attachment: fixed;
   };
 }
 .section-banner::before{
@@ -26,12 +29,14 @@
   font-weight: normal;
   font-family: $ubuntu;
 }
-.banner-button{
+.banner-button,.button-help{
   font-family: $opensans;
   background-color: $color_fb;
   color:$white;
   letter-spacing: 1px;
   font-size: $font-m;
+  width: 160px;
+  text-align: center;
   i{
     padding: 0 .5rem;
   }
@@ -40,4 +45,17 @@
 .banner-button:hover{
   background-color: $white;
   color: $color_fb;
+}
+.button-help{
+  margin-bottom: .5rem;
+  padding: 0.5rem;
+  color: $white;
+  border: 1px solid $white;
+  background-color: $black;
+}
+
+.button-help:hover{
+  border: 1px solid $black;
+  background-color: $white;
+  color: $black;
 }

@@ -1,6 +1,8 @@
 .header-container{
-  padding: 1rem .5rem;
+  padding: .5rem;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: $z-fixed;
   background-color: rgba($black,.7);
@@ -22,6 +24,7 @@
 }
 .main-menu{
   display: none;
+
   ul{
     padding-left: 0;
     margin-bottom: 0;
@@ -44,6 +47,7 @@
 }
 .bootstrap-container{
   position: relative;
+  
 }
 .nav-container{
   position: absolute;
@@ -51,6 +55,7 @@
   width: 100%;
   background-color: $white;
   text-align: center;
+  
   a{
     color: black;
   }
@@ -70,6 +75,7 @@
 }
 .show{
   display: block;
+  border: 1px solid #eee;
 }
 
 .toggle-button{
@@ -87,11 +93,13 @@
 }
 
 .whats-button{
-  @include dflex();
+  a{
+    @include dflex();
   padding: .5rem;
   font-size: $font-l;
   color: $color-wapp;
   cursor: pointer;
+ }
 
   &:hover{
     background-color: $black;

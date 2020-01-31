@@ -1,0 +1,17 @@
+.about-section__top{
+  min-height: 100vh;
+  margin-top: 4rem;
+  padding-bottom: 0;
+ &-img{
+   width: 100%;
+   max-width: 450px;
+ }
+}
+
+.about-text__container{
+  margin-top: 1rem;
+}
+.about-section__center{
+  text-align: center;
+}
+

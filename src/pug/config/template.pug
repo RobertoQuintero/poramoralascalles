@@ -7,15 +7,17 @@ html(lang="es")
     meta(charset="utf-8")
     meta(name="viewport" content="initial-scale=1.0, width=device-width")
     meta(name="twitter:card" content="summary_large_image")
-    meta(name="twitter:site" content=twitterAccount)
+    meta(name="twitter:site" content=twitterAccount) 
     meta(property="og:title" content=pageTitle)
     meta(property="og:description" content=pageDescription)
     meta(property="og:image" content=pageImage)
+    block head
     link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
     link(rel="stylesheet" href="assets/css/styles.css")
     link(rel="shortcut icon" href="img/favicon.png")
-    
-  body
+      
+  body.position-relative
+    include ../includes/home/header
     block main
-
+    include ../includes/footer
     script(src="assets/js/scripts-min.js")
