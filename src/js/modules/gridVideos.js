@@ -56,7 +56,7 @@ mql.addListener(youtubeMedia)
 addEventListener('DOMContentLoaded',()=>{
   setTimeout(() => {
     youtubeMedia(mql)
-  }, 4000);
+  }, 2000);
 })
 
 }

@@ -1,11 +1,9 @@
 include ./mixins_home
-section.section-news.py-3
+section.section-news
   .container
-    h2 Últimas noticias
-  .container.py-3
     .row#newsGrid
-      +newsItem()
-      +newsItem()
-      +newsItem()
-      +newsItem()
+      +newsItem('https://firebasestorage.googleapis.com/v0/b/poramoralascalles-1ce75.appspot.com/o/img%2F5.-img.jpg?alt=media&token=3b9faeba-8ed0-4d6d-8983-8b2c254cf06c','Conferencias','En secundarias, preparatorias y centros de integración social')
+      +newsItem('https://firebasestorage.googleapis.com/v0/b/poramoralascalles-1ce75.appspot.com/o/img%2F8-img.jpg?alt=media&token=3b9faeba-8ed0-4d6d-8983-8b2c254cf06c','Iglesia del parque','Todos los miércoles en el parque Juárez en punto de las 8:00 PM')
+      +newsItem('https://firebasestorage.googleapis.com/v0/b/poramoralascalles-1ce75.appspot.com/o/img%2F14-img.jpg?alt=media&token=3b9faeba-8ed0-4d6d-8983-8b2c254cf06c','Instalaciones','Visita nuestro centro de reintegración')
+      +newsItem('https://firebasestorage.googleapis.com/v0/b/poramoralascalles-1ce75.appspot.com/o/img%2F9-img.jpg?alt=media&token=3b9faeba-8ed0-4d6d-8983-8b2c254cf06c','Iglesia Plaza Garibaldi','Todos los Jueves en Plaza Garibaldi en punto de las 8:00 PM')
       

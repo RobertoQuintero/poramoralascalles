@@ -5,15 +5,14 @@ mixin feature(image,title,color)
         i.fa(class=image style=`color: ${color};`)
       h3.feature-title= title
 
-mixin newsItem()
+mixin newsItem(image,title,text)
   .col-md-3
     .new-item
       .new-item__image-container
-        img.new-item__image(src="https://lamenteesmaravillosa.com/wp-content/uploads/2017/09/amigos-cogidos-de-la-mano.jpg", alt="")
+        img.new-item__image(src=image, alt="")
       .new-item__data
-        h3.new-item__data-title titulo noticia
-        p.new-item__data-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed velit quas, possimus quisquam sequi sit?
-        a.btn.btn-outline-success(href="#") Seguir leyendo
+        h3.new-item__data-title= title
+        p.new-item__data-text= text
 
 mixin socialItem(url,image,name)
   .social-item

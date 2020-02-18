@@ -5,3 +5,23 @@
 .blockquote{
   font-family: $ubuntu;
 }
+
+.section-top__ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
+}
+.section-top__side{
+  flex-basis: 48%;
+  text-align: left;
+}
+.section-top__ul-item{
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.section-top__icon{
+  padding: 0 .5rem;
+  color: $color_ytb;
+}
