@@ -23,12 +23,14 @@
   font-family: $ubuntu;
 }
 .main-menu{
-  display: none;
-
+  // display: none;
+  height: 0;
+  border: none;
+  transition: .3s;
+  overflow: hidden;
   ul{
     padding-left: 0;
     margin-bottom: 0;
-    
     display: block;
     list-style: none;
   }
@@ -37,9 +39,10 @@
     display: block;
     padding: .5rem ;
     color: $white;
+    
   }
   @media (min-width:992px) {
-    display: block;
+    height: 40px;
     ul{
       display: flex;
     }
@@ -64,6 +67,7 @@
     background-color: $black;
     color: $white;
     text-decoration: none;
+    
   }
   @media (min-width:992px) {
     position: static;
@@ -75,8 +79,9 @@
   }
 }
 .show{
-  display: block;
-  border: 1px solid #eee;
+  // display: block;
+  border: none;
+  height: 200px;
 }
 
 .toggle-button{
